@@ -1,5 +1,5 @@
 {
-  "name": "Nuck Chorris",
+  "name": "nuck-chorris",
   "version": "0.0.1",
   "description": "Our team bot. Slack without bots is not Slack.",
   "main": "index.js",
