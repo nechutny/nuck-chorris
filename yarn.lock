@@ -206,6 +206,10 @@ process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
 
+ramda@0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.23.0.tgz#ccd13fff73497a93974e3e86327bfd87bd6e8e2b"
+
 readable-stream@^2.0.2:
   version "2.2.9"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.9.tgz#cf78ec6f4a6d1eb43d26488cac97f042e74b7fc8"
@@ -224,11 +228,12 @@ rxjs@5.0.3:
   dependencies:
     symbol-observable "^1.0.1"
 
-slacka@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/slacka/-/slacka-1.1.2.tgz#b9d3b27fec6215614c3438cb9aad2a900f0085a4"
+slacka@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/slacka/-/slacka-1.1.3.tgz#e1c7728d761a8d9c2435ddec06853975edd850f2"
   dependencies:
     node-fetch "1.6.3"
+    ramda "0.23.0"
     rxjs "5.0.3"
     winston "2.3.1"
     ws "1.1.1"

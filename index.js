@@ -1,5 +1,5 @@
 require('dotenv').load()
-const Slacka = require('./index')
+const Slacka = require('slacka')
 const {boobs} = require('./commands')
 
 if (!process.env.token) {
