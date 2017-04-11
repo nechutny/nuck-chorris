@@ -1,3 +1,4 @@
+require('dotenv').load()
 const Slacka = require('./index')
 const {boobs} = require('./commands')
 
