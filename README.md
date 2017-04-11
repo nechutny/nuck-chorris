@@ -1,1 +1,2 @@
-# nuck-chorris
+# Nuck Chorris
+Our lovely Slack bot. 😍

@@ -13,7 +13,11 @@ const slacka = new Slacka({
 })
 
 slacka.on('boobs', (sentReply) => {
+  const params = {
+    icon_emoji: `:boobs:`
+  }
+
   boobs()
-    .then((url) => sentReply(url))
-    .catch((e) => sentReply('Something went wrong! :('))
+    .then((url) => sentReply(url, params))
+    .catch((e) => sentReply('Something went wrong! :(', params))
 })
