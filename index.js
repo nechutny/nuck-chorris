@@ -1,6 +1,6 @@
 require('dotenv').load()
 const Slacka = require('slacka')
-const {boobs} = require('./commands')
+const {boobs, butt} = require('./commands')
 
 if (!process.env.token) {
   console.error('not specified token in environment')
@@ -18,6 +18,16 @@ slacka.on('boobs', (sentReply) => {
   }
 
   boobs()
+    .then((url) => sentReply(url, params))
+    .catch((e) => sentReply('Something went wrong! :(', params))
+})
+
+slacka.on('butt', (sentReply) => {
+  const params = {
+    icon_emoji: `:boobs:`
+  }
+
+  butt()
     .then((url) => sentReply(url, params))
     .catch((e) => sentReply('Something went wrong! :(', params))
 })

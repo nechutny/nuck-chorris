@@ -1,3 +1,4 @@
 module.exports = {
-  boobs: require('./boobs')
+  boobs: require('./boobs'),
+  butt: require('./butt')
 }
